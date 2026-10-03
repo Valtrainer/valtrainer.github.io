@@ -578,10 +578,10 @@
     <header class="sec-head reveal">
       <p class="kicker">04 · Updates</p>
       <h2 id="updates-title">Updates itself, like Discord or Steam</h2>
-      <p>Install once. New drills and fixes arrive on their own, and your settings and stats are kept.</p>
+      <p>Install once and say yes to updates when asked. New drills and fixes then arrive on their own, and your settings and stats are kept.</p>
     </header>
     <ol class="flow reveal">
-      <li><b>Checks</b><span>At startup and every 6 hours, ValTrainer asks GitHub whether a newer version is out.</span></li>
+      <li><b>Checks</b><span>Once you allow it, ValTrainer asks GitHub at startup and every 6 hours whether a newer version is out.</span></li>
       <li><b>Downloads</b><span>In the background, while you play. Downloads resume after a restart or a dropped connection.</span></li>
       <li><b>Verifies</b><span>Every file is checked against the release's published SHA-256 hash. A damaged file is deleted.</span></li>
       <li><b>Restarts</b><span>Click <span class="banner-demo">RESTART TO UPDATE</span> or just keep playing: it installs the next time you start.</span></li>
@@ -592,8 +592,9 @@
         <li><b>Portable version:</b> the new <code>ValTrainer.exe</code> replaces the old one in its folder.</li>
       </ul>
       <ul class="ticks">
+        <li><b>Opt-in:</b> from version 1.4.1, the first start asks “Check GitHub for new versions?”. Nothing is requested until you choose <i>Enable updates</i>.</li>
         <li><b>You're in control:</b> Settings → About has <i>Check for updates</i>, <i>Download updates automatically</i> and <i>Check now</i>. Skipped versions are never downloaded.</li>
-        <li>Installed with a version before 1.3.0? Run the new installer once by hand; after that it's automatic.</li>
+        <li>Installed with a version before 1.3.0? Run the new installer once by hand; after that it updates itself once you enable updates.</li>
       </ul>
     </div>
   </div>
@@ -641,12 +642,15 @@
       <ul>
         <li><strong>Nothing is uploaded.</strong> No account, no analytics, no telemetry leaves your PC.</li>
         <li>Your settings, stats and run recordings stay in <code>%APPDATA%\ValTrainer</code>. Delete that folder to reset everything.</li>
-        <li>The <strong>only</strong> network traffic is the optional update check to <code>api.github.com</code> (at startup
-          and every 6 hours) and downloading a newer release's files from GitHub. Turn it off in Settings and ValTrainer never goes online.</li>
+        <li>The <strong>only</strong> network traffic is the update check to <code>api.github.com</code> (at startup
+          and every 6 hours) and downloading a newer release's files from GitHub. From version 1.4.1 it's
+          <strong>opt-in</strong>: the first start asks, and until you choose <i>Enable updates</i> ValTrainer never goes
+          online. <i>Check now</i> in Settings → About checks once, only when you click it.</li>
       </ul>
       <p class="site-note"><strong>This website</strong> has no cookies, analytics, trackers or ads. To link the newest
         files, your browser asks <code>api.github.com</code> for the latest release once per session. It's hosted on
-        GitHub Pages, which keeps standard server logs under GitHub's privacy statement.</p>
+        GitHub Pages, which keeps standard server logs under GitHub's privacy statement.
+        See the full <a href="code-signing-policy.html#privacy">privacy policy</a>.</p>
     </aside>
     <div class="faq">
       <details>
@@ -732,7 +736,7 @@
     <header class="sec-head reveal">
       <p class="kicker">07 · Changelog</p>
       <h2 id="changelog-title">What's new</h2>
-      <p>Highlights from each release. Your copy updates itself.</p>
+      <p>Highlights from each release. With updates enabled, your copy updates itself.</p>
     </header>
     <ol class="timeline">
       <li class="release latest reveal">
@@ -847,6 +851,7 @@
           <li><a href="#install">Install guide</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#privacy">Privacy</a></li>
+          <li><a href="code-signing-policy.html">Code signing policy</a></li>
           <li><a href="https://github.com/idoraz1/ValTrainer/issues/new/choose">Report a bug or suggest a drill</a></li>
           <li><a href="https://github.com/idoraz1/ValTrainer/blob/main/SECURITY.md">Security policy</a></li>
         </ul>

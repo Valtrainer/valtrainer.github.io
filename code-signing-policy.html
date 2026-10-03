@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code signing policy · ValTrainer</title>
+<meta name="description" content="How ValTrainer's Windows releases are code-signed (free code signing by SignPath.io, certificate by SignPath Foundation), who can approve a signed release, and ValTrainer's privacy policy.">
+<link rel="canonical" href="https://valtrainer.github.io/code-signing-policy.html">
+<meta name="theme-color" content="#0f1923">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ValTrainer">
+<meta property="og:title" content="Code signing policy · ValTrainer">
+<meta property="og:description" content="Free code signing provided by SignPath.io, certificate by SignPath Foundation. Team roles and privacy policy.">
+<meta property="og:url" content="https://valtrainer.github.io/code-signing-policy.html">
+<meta property="og:image" content="https://valtrainer.github.io/media/og-image.jpg">
+
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className += " js";</script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="ValTrainer home">
+      <img src="favicon-32.png" alt="" width="32" height="32">
+      <span><b>VAL</b>TRAINER</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#drills">Drills</a></li>
+        <li><a href="/#install">Install</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#changelog">Changelog</a></li>
+      </ul>
+    </nav>
+    <a class="gh-link" href="https://github.com/idoraz1/ValTrainer" aria-label="ValTrainer on GitHub">
+      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
+    <a class="btn btn-primary btn-sm" data-dl="setup" href="https://github.com/idoraz1/ValTrainer/releases/latest">Download</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section policy" aria-labelledby="policy-title">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker">Legal · Code signing</p>
+      <h1 id="policy-title">Code signing policy</h1>
+      <p>Windows checks the digital signature of programs you download. Here is how ValTrainer's releases are
+        signed, who can approve a signed release, and what the program does on your network.</p>
+    </header>
+
+    <div class="policy-body">
+      <section class="panel" aria-labelledby="sign-title">
+        <h2 id="sign-title">Signing</h2>
+        <p class="policy-lead">Free code signing provided by <a href="https://signpath.io">SignPath.io</a>,
+          certificate by <a href="https://signpath.org">SignPath Foundation</a>.</p>
+        <ul class="ticks">
+          <li><b>What is signed:</b> the Windows installer (<code>ValTrainer-…-Setup.exe</code>) and the program
+            (<code>ValTrainer.exe</code>, also inside the portable zip) attached to the official releases on
+            <a href="https://github.com/idoraz1/ValTrainer/releases">GitHub</a>.</li>
+          <li><b>Built from public source:</b> every signed file is built by the project's GitHub Actions release
+            workflow from a tagged commit of the public <a href="https://github.com/idoraz1/ValTrainer">source code</a>.
+            Nothing built on a personal PC is signed.</li>
+          <li><b>Approved by hand:</b> each signing request is approved by a project approver (below) before the
+            release is published.</li>
+          <li><b>Checking a download:</b> compare its SHA-256 hash with <code>SHA256SUMS.txt</code> from the same
+            release. If a file claiming to be ValTrainer is signed by anyone else, don't run it and
+            <a href="https://github.com/idoraz1/ValTrainer/blob/main/SECURITY.md">report it</a>.</li>
+        </ul>
+      </section>
+
+      <section class="panel" aria-labelledby="roles-title">
+        <h2 id="roles-title">Team roles</h2>
+        <dl class="roles">
+          <div><dt>Committers and reviewers</dt><dd><a href="https://github.com/idoraz1">idoraz1</a></dd></div>
+          <div><dt>Approvers</dt><dd><a href="https://github.com/idoraz1">idoraz1</a></dd></div>
+        </dl>
+        <p class="dim small">Committers and reviewers can change the source code and review contributions. Approvers
+          approve each code signing request. Outside contributions go through pull requests that a reviewer reads
+          before merging.</p>
+      </section>
+
+      <section class="panel" id="privacy" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Privacy policy</h2>
+        <p class="policy-lead">This program will not transfer any information to other networked systems unless specifically requested by the user</p>
+        <p>The only network feature in ValTrainer is the update check, and from version 1.4.1 it is
+          <strong>off until you allow it</strong>:</p>
+        <ul class="ticks">
+          <li><b>You're asked first:</b> on the first start, ValTrainer asks “Check GitHub for new versions?”. Until
+            you choose <i>Enable updates</i>, it makes no network request at all. Choose <i>Not now</i> and it stays offline.</li>
+          <li><b>What it asks:</b> with updates enabled, ValTrainer asks GitHub's API (<code>api.github.com</code>)
+            for the project's latest release at startup and every 6 hours. If a newer version is out, it downloads
+            that release's files from GitHub and checks them against the release's SHA-256 hashes.</li>
+          <li><b>What it sends:</b> nothing about you. The request carries only what every web request carries: your
+            IP address and a <code>ValTrainer/&lt;version&gt;</code> user agent. GitHub handles it under
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</li>
+          <li><b>You stay in control:</b> <i>Check now</i> in Settings → About checks once, when you click it, even with
+            automatic checks off. <i>Check for updates</i> and <i>Download updates automatically</i> can be turned off at any time.</li>
+          <li><b>Your data stays on your PC:</b> settings, stats and run recordings are stored in
+            <code>%APPDATA%\ValTrainer</code> and are never uploaded. There is no account and no analytics, and nothing is ever sent to the developers.
+            VALORANT's settings files are only read, on your PC.</li>
+        </ul>
+        <p class="dim small">Versions 1.3.0 to 1.4.0 checked for updates automatically unless you turned it off in
+          Settings. This website has no cookies, analytics, trackers or ads; it is hosted on GitHub Pages, which keeps
+          standard server logs under GitHub's privacy statement.</p>
+      </section>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/" aria-label="ValTrainer home"><img src="favicon-32.png" alt="" width="32" height="32" loading="lazy"><span><b>VAL</b>TRAINER</span></a>
+        <p style="margin-top:1rem">A free, open-source aim, movement and utility trainer for VALORANT players.</p>
+      </div>
+      <nav aria-labelledby="f-get">
+        <h2 id="f-get">GET IT</h2>
+        <ul>
+          <li><a data-dl="setup" href="https://github.com/idoraz1/ValTrainer/releases/latest">Download (Setup.exe)</a></li>
+          <li><a data-dl="portable" href="https://github.com/idoraz1/ValTrainer/releases/latest">Portable.zip</a></li>
+          <li><a href="https://github.com/idoraz1/ValTrainer/releases">All releases</a></li>
+          <li><a href="https://github.com/idoraz1/ValTrainer/blob/main/CHANGELOG.md">Changelog</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-help">
+        <h2 id="f-help">HELP</h2>
+        <ul>
+          <li><a href="/#install">Install guide</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="code-signing-policy.html" aria-current="page">Code signing policy</a></li>
+          <li><a href="https://github.com/idoraz1/ValTrainer/issues/new/choose">Report a bug or suggest a drill</a></li>
+          <li><a href="https://github.com/idoraz1/ValTrainer/blob/main/SECURITY.md">Security policy</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-src">
+        <h2 id="f-src">OPEN SOURCE</h2>
+        <ul>
+          <li><a href="https://github.com/idoraz1/ValTrainer">GitHub repository</a></li>
+          <li><a href="https://github.com/idoraz1/ValTrainer/blob/main/CONTRIBUTING.md">Contributing</a></li>
+          <li><a href="https://github.com/idoraz1/ValTrainer/blob/main/LICENSE">License (GPL-3.0-or-later)</a></li>
+          <li><a href="https://github.com/idoraz1/ValTrainer/blob/main/ValTrainerGodot/CREDITS.md">Credits</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="legal">
+      <p>Copyright © 2026 ValTrainer contributors. ValTrainer is free software under the GNU General Public License,
+        version 3 or (at your option) any later version. It is distributed in the hope that it will be useful, but without any warranty.</p>
+      <p>ValTrainer uses no Riot art, audio or models. ValTrainer is fan-made and is not endorsed by or affiliated with
+        Riot Games. VALORANT and its agent and map names are trademarks of Riot Games, Inc.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
