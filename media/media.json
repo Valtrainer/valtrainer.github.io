@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-03",
-  "notes": "Recorded with Godot Movie Maker (60 fps, 1920x1080 render) from ValTrainer v1.4.0 dev auto-play tools; videos are muted, seamless loops.",
+  "generated": "2026-10-07",
+  "notes": "Recorded with Godot Movie Maker (60 fps, 1920x1080 render) from ValTrainer v1.4.0 dev auto-play tools (clip-flicks, clip-lockin and shot-lockin: v1.5.0); videos are muted, seamless loops.",
   "videos": [
     {
       "id": "hero",
@@ -160,26 +160,26 @@
     },
     {
       "id": "clip-flicks",
-      "caption": "Gridshot: fast hits on a 3x3 target board at 100% accuracy.",
+      "caption": "Head Flicks: one real-size head at a time with the new VALORANT-look targets (dark body, red outline), flicked and hit in a row (zoomed-in crop of the 1080p view).",
       "poster": {
         "file": "clip-flicks.jpg",
         "width": 1280,
         "height": 720,
-        "bytes": 82124
+        "bytes": 66920
       },
       "sources": [
         {
           "file": "clip-flicks.webm",
           "width": 1280,
           "height": 720,
-          "bytes": 1102140,
+          "bytes": 945116,
           "duration": 6.0
         },
         {
           "file": "clip-flicks.mp4",
           "width": 1280,
           "height": 720,
-          "bytes": 928786,
+          "bytes": 1047737,
           "duration": 6.0
         }
       ]
@@ -211,28 +211,28 @@
       ]
     },
     {
-      "id": "clip-warmup",
-      "caption": "Warm-up summary: the lock-in graph comparing each drill to your usual level with the sens shifter, plus the drill table.",
+      "id": "clip-lockin",
+      "caption": "Lock-In: the step card between drills (drill 3 of 8, Head Flicks, adaptive to keep you near 80% hits, one cue), then the drill with its live level badge.",
       "poster": {
-        "file": "clip-warmup.jpg",
+        "file": "clip-lockin.jpg",
         "width": 1280,
         "height": 720,
-        "bytes": 94354
+        "bytes": 39712
       },
       "sources": [
         {
-          "file": "clip-warmup.webm",
+          "file": "clip-lockin.webm",
           "width": 1280,
           "height": 720,
-          "bytes": 825822,
-          "duration": 6.0
+          "bytes": 882451,
+          "duration": 6.35
         },
         {
-          "file": "clip-warmup.mp4",
+          "file": "clip-lockin.mp4",
           "width": 1280,
           "height": 720,
-          "bytes": 669726,
-          "duration": 6.0
+          "bytes": 850587,
+          "duration": 6.35
         }
       ]
     }
@@ -271,6 +271,24 @@
           "width": 1600,
           "height": 900,
           "bytes": 197418
+        }
+      ]
+    },
+    {
+      "id": "shot-lockin",
+      "caption": "Lock-In setup: the Short / Lock-In / Training day routines, the timeline (check-in, activation, adaptive calibration, mechanics, deathmatch, lock in), the setup check against VALORANT (sample config) and the match-log readout (sample data).",
+      "files": [
+        {
+          "file": "shot-lockin.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 80704
+        },
+        {
+          "file": "shot-lockin.jpg",
+          "width": 1600,
+          "height": 900,
+          "bytes": 197187
         }
       ]
     },

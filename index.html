@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ValTrainer">
 <meta property="og:title" content="ValTrainer · Free VALORANT aim, movement and utility trainer">
-<meta property="og:description" content="Plays with your own VALORANT settings. Aim coach, 30+ drills, all 29 agents, 6 true-scale maps, Deathmatch and warm-ups. Free and open source for Windows 10/11.">
+<meta property="og:description" content="Plays with your own VALORANT settings. Aim coach, 30+ drills, all 29 agents, 6 true-scale maps, Deathmatch and a Lock-In routine for before ranked. Free and open source for Windows 10/11.">
 <meta property="og:url" content="https://valtrainer.github.io/">
 <meta property="og:image" content="https://valtrainer.github.io/media/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -58,7 +58,7 @@
   "operatingSystem": "Windows 10, Windows 11",
   "url": "https://valtrainer.github.io/",
   "downloadUrl": "https://github.com/idoraz1/ValTrainer/releases/latest",
-  "softwareVersion": "1.4.1",
+  "softwareVersion": "1.5.0",
   "license": "https://www.gnu.org/licenses/gpl-3.0.html",
   "isAccessibleForFree": true,
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -112,7 +112,7 @@
           <a class="btn btn-primary btn-lg" data-dl="setup" href="https://github.com/idoraz1/ValTrainer/releases/latest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
             <span class="btn-text">Download for Windows
-              <small><span data-version-label>v1.4.1</span> · Installer · <span data-size="setup">137 MB</span></small></span>
+              <small><span data-version-label>v1.5.0</span> · Installer · <span data-size="setup">137 MB</span></small></span>
           </a>
           <a class="btn btn-ghost" data-dl="portable" href="https://github.com/idoraz1/ValTrainer/releases/latest">
             Portable .zip <span class="sr-only">(</span><span class="dim small" data-size="portable">176 MB</span><span class="sr-only">)</span>
@@ -124,8 +124,8 @@
           <li>Open source</li>
           <li>No account, nothing uploaded</li>
         </ul>
-        <p class="release-line">Latest: <a data-release-link href="https://github.com/idoraz1/ValTrainer/releases/latest"><span data-version-label>v1.4.1</span></a>,
-          released <time data-date datetime="2026-10-03">3 Oct 2026</time> ·
+        <p class="release-line">Latest: <a data-release-link href="https://github.com/idoraz1/ValTrainer/releases/latest"><span data-version-label>v1.5.0</span></a>,
+          released <time data-date datetime="2026-10-07">7 Oct 2026</time> ·
           <a href="#install">Install help</a> ·
           <a data-dl="sums" href="https://github.com/idoraz1/ValTrainer/releases/latest">SHA256SUMS.txt</a> ·
           Also on <a href="https://idoraz1.itch.io/valtrainer">itch.io</a></p>
@@ -184,8 +184,8 @@
           <ul class="ticks">
             <li><b>Aim:</b> sensitivity plus scoped and ADS multipliers, with VALORANT's math (0.07° per count × sens,
               103° horizontal FOV) and raw mouse input, so your cm/360 is identical.</li>
-            <li><b>Look:</b> your crosshair profile, pixel for pixel, with movement and firing error, and your enemy highlight colour.</li>
-            <li><b>Controls:</b> movement, walk, crouch, jump and ability keybinds, and hold or toggle scope.</li>
+            <li><b>Look:</b> your crosshair profile, pixel for pixel, with movement and firing error, and your enemy highlight colour. Aim targets look like VALORANT enemies: a dark body with an outline in that colour.</li>
+            <li><b>Controls:</b> all your keyboard and mouse keybinds (movement, jump, fire, reload, abilities and more), and hold or toggle scope.</li>
             <li><b>Display:</b> resolution, display mode, monitor, VSync and FPS cap.</li>
           </ul>
           <p class="note">No VALORANT on this PC? ValTrainer uses VALORANT's defaults and you set your sens in Settings.
@@ -252,7 +252,7 @@
           <span class="tag tag-agents">New in 1.4</span>
           <h3>Agent training for all 29 agents</h3>
           <p>The Agents screen groups every agent by role. Each agent page shows their abilities, which drill trains each
-            one, signature drills played with that agent's own utility, drills for their role, and a 10-minute agent warm-up.</p>
+            one, signature drills played with that agent's own utility, drills for their role, and a 10-minute Lock-In with that agent.</p>
           <ul class="ticks">
             <li><b>Flash &amp; Peek:</b> throw your own flash (Phoenix, Skye, Yoru, KAY/O, Breach, Gekko) or nearsight
               (Reyna, Omen), then swing and kill the blinded defenders.</li>
@@ -348,26 +348,32 @@
       <article class="feature reveal">
         <div class="feature-media">
           <figure class="shot shot-accent">
-            <div class="frame" data-webm="media/clip-warmup.webm" data-mp4="media/clip-warmup.mp4">
-              <img src="media/clip-warmup.jpg" data-fallback="img/menu.webp" width="1600" height="900" loading="lazy" decoding="async"
-                alt="A guided warm-up running drills from easy to hard, with a card that shows the next drill.">
+            <div class="frame" data-webm="media/clip-lockin.webm" data-mp4="media/clip-lockin.mp4">
+              <img src="media/clip-lockin.jpg" data-fallback="img/menu.webp" width="1600" height="900" loading="lazy" decoding="async"
+                alt="Lock-In: a card announcing the next drill, then the drill with VALORANT-style targets.">
               <video muted playsinline loop preload="none" aria-hidden="true" tabindex="-1"></video>
             </div>
-            <figcaption>Warm up: drills from easy to hard, ending in a deathmatch.</figcaption>
+            <figcaption>Lock-In: about 12 minutes from easy drills to a deathmatch, then into your match.</figcaption>
           </figure>
         </div>
         <div class="feature-text">
-          <span class="tag tag-other">Warm up</span>
-          <h3>Warm up like the pros</h3>
-          <p>Pick Quick (≈8 min), Standard (≈15 min) or Pro (≈25 min). It runs drills at your tier from easy to hard:
-            smooth tracking and big targets first, then flicks and target switching, then strafing bots, movement and
-            peeks, then a deathmatch.</p>
+          <span class="tag tag-other">New in 1.5</span>
+          <h3>Lock in before ranked</h3>
+          <p>A short routine built from sports-psychology and motor-learning research. Everything runs at your real sens:
+            easy drills first, then drills that adapt to you, then bots and a deathmatch whose last minute is easier, so
+            you finish on a good note. Pick Short (≈7 min), Lock-In (≈12 min) or Training Day (≈20 min).</p>
           <ul class="ticks">
-            <li>An optional <b>sens shifter</b> starts a little above or below your sens, then steps back. The screen is
-              honest that there's little evidence for it either way.</li>
-            <li>A <b>summary with a lock-in graph</b>: each drill as a % of your 7-day average, start → end
-              comparisons, and whether you're warmed up.</li>
+            <li><b>Check-in:</b> rate your energy and confidence, pick one goal for your games and one cue word. A
+              breathing guide comes up if you feel wired.</li>
+            <li><b>Adaptive drills:</b> Head Flicks, Spidershot and Gridshot keep you near 80% hits.</li>
+            <li><b>Hand-off:</b> your goal and cue, a three-step buy-phase routine and a Launch VALORANT button.</li>
+            <li><b>Setup check:</b> sens, FOV, display, VSync and FPS cap compared with VALORANT, plus a crosshair
+              visibility hint.</li>
+            <li><b>Your own data:</b> results compared with your usual range, and an optional match log that shows what
+              seems to work for you. It stays on your PC.</li>
           </ul>
+          <p class="note">No study has tested an aim-trainer warm-up on ranked results yet, so ValTrainer doesn't promise
+            a higher win rate. It builds on what the research supports.</p>
         </div>
       </article>
 
@@ -499,7 +505,7 @@
         <ul>
           <li><b>Signature drills</b>Flash &amp; Peek, Recon &amp; Clear, Smoke Execute, Mobility Entry, Chamber Guns and Site Anchor setups.</li>
           <li><b>Role drills</b>The drills that matter most for duelists, initiators, controllers and sentinels.</li>
-          <li><b>Agent warm-up</b>A 10-minute warm-up for each agent.</li>
+          <li><b>Agent Lock-In</b>A 10-minute Lock-In routine for each agent.</li>
         </ul>
       </section>
       <section class="drill-cat cat-coach reveal" aria-labelledby="cat-coach">
@@ -513,7 +519,7 @@
         <header><h3 id="cat-other">Other</h3><span class="count">2 modes</span></header>
         <ul>
           <li><b>Reaction Test</b>Your raw reaction time.</li>
-          <li><b>Warm Up</b>Quick, Standard or Pro routines with a lock-in graph.</li>
+          <li><b>Lock-In</b>A short routine before ranked: check-in, adaptive drills, deathmatch, goal and cue.</li>
         </ul>
       </section>
     </div>
@@ -742,7 +748,29 @@
     </header>
     <ol class="timeline">
       <li class="release latest reveal">
-        <div class="ver">1.4.0<small>3 Oct 2026</small><span class="badge">Latest</span></div>
+        <div class="ver">1.5.0<small>7 Oct 2026</small><span class="badge">Latest</span></div>
+        <div>
+          <h3>Lock-In and VALORANT-look targets</h3>
+          <ul>
+            <li>Lock-In replaces Warm Up: check-in, adaptive drills, an easier last minute, goal and cue, Launch VALORANT</li>
+            <li>Setup check, crosshair visibility hint and an optional local match log</li>
+            <li>Aim targets look like VALORANT enemies, with more contrast in the Range</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.4.4<small>6 Oct 2026</small></div>
+        <div>
+          <h3>Your keybinds, crosshair code and safer updates</h3>
+          <ul>
+            <li>All your VALORANT keyboard and mouse keybinds imported (1.4.3)</li>
+            <li>Copy your crosshair code any time (1.4.2)</li>
+            <li>Opt-in update checks (1.4.1), and updates that wait for ValTrainer to close (1.4.4)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.4.0<small>3 Oct 2026</small></div>
         <div>
           <h3>Agents, jumping and two new maps</h3>
           <ul>
@@ -822,7 +850,7 @@
       <a class="btn btn-primary btn-lg" data-dl="setup" href="https://github.com/idoraz1/ValTrainer/releases/latest">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
         <span class="btn-text">Download ValTrainer
-          <small><span data-version-label>v1.4.1</span> · Installer · <span data-size="setup">137 MB</span></small></span>
+          <small><span data-version-label>v1.5.0</span> · Installer · <span data-size="setup">137 MB</span></small></span>
       </a>
       <a class="btn btn-ghost" href="https://github.com/idoraz1/ValTrainer">View source on GitHub</a>
       <a class="btn btn-ghost" href="https://idoraz1.itch.io/valtrainer">Get it on itch.io</a>
