@@ -431,6 +431,8 @@ td.num { font-variant-numeric: tabular-nums; }
 .cta-band h2 { font-size: clamp(2.6rem, 7vw, 5.4rem); }
 .cta-band p { color: var(--dim); margin: 1rem auto 2rem; max-width: 34rem; font-size: 1.1rem; }
 .cta-band .cta-row { justify-content: center; margin: 0; }
+.cta-band p.support-line { margin: 1.75rem auto 0; font-size: 0.95rem; }
+.cta-band p.support-line a { color: var(--text); }
 .range .grid line { stroke: rgba(236, 232, 225, 0.06); stroke-width: 1; }
 .range .tgt { fill: var(--red); stroke: #ffb3ba; stroke-width: 2; transform-box: fill-box; transform-origin: center; animation: tgt 5s linear infinite; }
 .range .hm { stroke: #fff; stroke-width: 3; stroke-linecap: square; opacity: 0; transform-box: fill-box; transform-origin: center; animation: hm 5s linear infinite; }
