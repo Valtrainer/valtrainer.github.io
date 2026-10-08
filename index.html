@@ -58,7 +58,7 @@
   "operatingSystem": "Windows 10, Windows 11",
   "url": "https://valtrainer.github.io/",
   "downloadUrl": "https://github.com/idoraz1/ValTrainer/releases/latest",
-  "softwareVersion": "1.5.0",
+  "softwareVersion": "1.6.0",
   "license": "https://www.gnu.org/licenses/gpl-3.0.html",
   "isAccessibleForFree": true,
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -112,7 +112,7 @@
           <a class="btn btn-primary btn-lg" data-dl="setup" href="https://github.com/idoraz1/ValTrainer/releases/latest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
             <span class="btn-text">Download for Windows
-              <small><span data-version-label>v1.5.0</span> · Installer · <span data-size="setup">137 MB</span></small></span>
+              <small><span data-version-label>v1.6.0</span> · Installer · <span data-size="setup">137 MB</span></small></span>
           </a>
           <a class="btn btn-ghost" data-dl="portable" href="https://github.com/idoraz1/ValTrainer/releases/latest">
             Portable .zip <span class="sr-only">(</span><span class="dim small" data-size="portable">176 MB</span><span class="sr-only">)</span>
@@ -124,8 +124,8 @@
           <li>Open source</li>
           <li>No account, nothing uploaded</li>
         </ul>
-        <p class="release-line">Latest: <a data-release-link href="https://github.com/idoraz1/ValTrainer/releases/latest"><span data-version-label>v1.5.0</span></a>,
-          released <time data-date datetime="2026-10-07">7 Oct 2026</time> ·
+        <p class="release-line">Latest: <a data-release-link href="https://github.com/idoraz1/ValTrainer/releases/latest"><span data-version-label>v1.6.0</span></a>,
+          released <time data-date datetime="2026-10-08">8 Oct 2026</time> ·
           <a href="#install">Install help</a> ·
           <a data-dl="sums" href="https://github.com/idoraz1/ValTrainer/releases/latest">SHA256SUMS.txt</a> ·
           Also on <a href="https://idoraz1.itch.io/valtrainer">itch.io</a></p>
@@ -184,7 +184,7 @@
           <ul class="ticks">
             <li><b>Aim:</b> sensitivity plus scoped and ADS multipliers, with VALORANT's math (0.07° per count × sens,
               103° horizontal FOV) and raw mouse input, so your cm/360 is identical.</li>
-            <li><b>Look:</b> your crosshair profile, pixel for pixel, with movement and firing error, and your enemy highlight colour. Aim targets look like VALORANT enemies: a dark body with an outline in that colour.</li>
+            <li><b>Look:</b> your crosshair profile, pixel for pixel, with movement and firing error: your primary crosshair at hip fire, your ADS crosshair while aiming down sights and your sniper dot in the scope, as VALORANT draws them. Plus your enemy highlight colour. Aim targets look like VALORANT enemies: a dark body with an outline in that colour.</li>
             <li><b>Controls:</b> all your keyboard and mouse keybinds (movement, jump, fire, reload, abilities and more), and hold or toggle scope.</li>
             <li><b>Display:</b> resolution, display mode, monitor, VSync and FPS cap.</li>
           </ul>
@@ -314,6 +314,7 @@
             <li><b>Spray Transfer:</b> kill every agent in one continuous spray.</li>
             <li><b>Long-range Taps:</b> 30–50 m Vandal taps, with a ring that shows when the recoil has reset.</li>
             <li><b>Operator</b> with a 2.5× scope and bolt action.</li>
+            <li><b>Aiming down sights like VALORANT:</b> the gun stays low, a thin sight outline appears around your crosshair and the zoom eases in.</li>
           </ul>
           <p class="note">The per-bullet recoil numbers are reconstructed; Riot never published them.</p>
         </div>
@@ -411,7 +412,8 @@
               strafe tracking, and it narrows down to the one you score best with. You get a VALORANT sens, eDPI and cm/360.</li>
             <li><b>Crosshair Finder</b> (about 6 minutes): ranks colours and outlines by contrast against the maps and
               your enemy highlight colour, times how fast you spot each one, then runs a bracket of shapes decided by your
-              aim. You get a VALORANT crosshair code to import.</li>
+              aim. Pick your primary, ADS or sniper crosshair; you get a full VALORANT crosshair code that changes only
+              that tab.</li>
           </ul>
           <p class="note">ValTrainer never changes VALORANT. You apply the new sens or crosshair yourself in VALORANT's settings.</p>
         </div>
@@ -512,7 +514,7 @@
         <header><h3 id="cat-coach">Coach</h3><span class="count">2 tools</span></header>
         <ul>
           <li><b>Sens Finder</b>A blind A/B test of about 13 minutes.</li>
-          <li><b>Crosshair Finder</b>The crosshair you see and shoot best with, in about 6 minutes.</li>
+          <li><b>Crosshair Finder</b>The primary, ADS or sniper crosshair you see and shoot best with, in about 6 minutes.</li>
         </ul>
       </section>
       <section class="drill-cat cat-other reveal" aria-labelledby="cat-other">
@@ -748,7 +750,18 @@
     </header>
     <ol class="timeline">
       <li class="release latest reveal">
-        <div class="ver">1.5.0<small>7 Oct 2026</small><span class="badge">Latest</span></div>
+        <div class="ver">1.6.0<small>8 Oct 2026</small><span class="badge">Latest</span></div>
+        <div>
+          <h3>Split crosshairs and VALORANT-style ADS</h3>
+          <ul>
+            <li>Your primary, ADS and sniper crosshairs, each where VALORANT shows it</li>
+            <li>Crosshair Finder for primary, ADS or sniper; paste a crosshair code in Settings</li>
+            <li>Aiming down sights and sniper scopes that look like VALORANT</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.5.0<small>7 Oct 2026</small></div>
         <div>
           <h3>Lock-In and VALORANT-look targets</h3>
           <ul>
@@ -850,7 +863,7 @@
       <a class="btn btn-primary btn-lg" data-dl="setup" href="https://github.com/idoraz1/ValTrainer/releases/latest">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
         <span class="btn-text">Download ValTrainer
-          <small><span data-version-label>v1.5.0</span> · Installer · <span data-size="setup">137 MB</span></small></span>
+          <small><span data-version-label>v1.6.0</span> · Installer · <span data-size="setup">137 MB</span></small></span>
       </a>
       <a class="btn btn-ghost" href="https://github.com/idoraz1/ValTrainer">View source on GitHub</a>
       <a class="btn btn-ghost" href="https://idoraz1.itch.io/valtrainer">Get it on itch.io</a>
