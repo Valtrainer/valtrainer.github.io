@@ -94,8 +94,8 @@
       <section class="panel" id="privacy" aria-labelledby="privacy-title">
         <h2 id="privacy-title">Privacy policy</h2>
         <p class="policy-lead">This program will not transfer any information to other networked systems unless specifically requested by the user</p>
-        <p>The only network feature in ValTrainer is the update check, and from version 1.4.1 it is
-          <strong>off until you allow it</strong>:</p>
+        <p>ValTrainer has two network features, and neither runs without you. The first is the update check, which
+          from version 1.4.1 is <strong>off until you allow it</strong>:</p>
         <ul class="ticks">
           <li><b>You're asked first:</b> on the first start, ValTrainer asks “Check GitHub for new versions?”. Until
             you choose <i>Enable updates</i>, it makes no network request at all. Choose <i>Not now</i> and it stays offline.</li>
@@ -108,8 +108,21 @@
           <li><b>You stay in control:</b> <i>Check now</i> in Settings → About checks once, when you click it, even with
             automatic checks off. <i>Check for updates</i> and <i>Download updates automatically</i> can be turned off at any time.</li>
           <li><b>Your data stays on your PC:</b> settings, stats and run recordings are stored in
-            <code>%APPDATA%\ValTrainer</code> and are never uploaded. There is no account and no analytics, and nothing is ever sent to the developers.
+            <code>%APPDATA%\ValTrainer</code> and are never uploaded. There is no account and no analytics, and nothing is sent to the developers unless you send a bug report.
             VALORANT's settings files are only read, on your PC.</li>
+        </ul>
+        <p>The second is <strong>bug reports</strong> (from version 1.9.0), sent only when you ask:</p>
+        <ul class="ticks">
+          <li><b>Only when you press Send:</b> nothing is sent until you fill in the Report a bug form and press
+            <i>Send</i>. <i>Copy report</i> and <i>Open on GitHub</i> send nothing.</li>
+          <li><b>What it sends:</b> exactly what the form's “What gets sent” preview shows: your text, an optional Discord
+            name, the app version, Windows, CPU, RAM, GPU and display info, the settings that matter for bugs and the end
+            of the log. Your Windows user name, PC name, personal folders, VALORANT account folder IDs and e-mail
+            addresses are removed first.</li>
+          <li><b>Where it goes:</b> through a small relay on Cloudflare Workers
+            (<a href="https://github.com/idoraz1/ValTrainer/tree/main/tools/bug-relay">source on GitHub</a>) to the
+            #bug-reports forum on the ValTrainer Discord, where server members can see it. The relay keeps only a
+            shortened hash of your IP address for one hour, to limit spam; your IP is never posted.</li>
         </ul>
         <p class="dim small">Versions 1.3.0 to 1.4.0 checked for updates automatically unless you turned it off in
           Settings. This website has no cookies, analytics, trackers or ads; it is hosted on GitHub Pages, which keeps

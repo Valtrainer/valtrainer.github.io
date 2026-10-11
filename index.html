@@ -123,7 +123,7 @@
           <li>Windows 10 / 11</li>
           <li>Free</li>
           <li>Open source</li>
-          <li>No account, nothing uploaded</li>
+          <li>No account, no telemetry</li>
         </ul>
         <p class="release-line">Latest: <a data-release-link href="https://github.com/idoraz1/ValTrainer/releases/latest"><span data-version-label>v1.7.0</span></a>,
           released <time data-date datetime="2026-10-08">8 Oct 2026</time> ·
@@ -651,9 +651,14 @@
     <aside class="panel privacy reveal" id="privacy" aria-labelledby="privacy-title">
       <h3 id="privacy-title">Privacy</h3>
       <ul>
-        <li><strong>Nothing is uploaded.</strong> No account, no analytics, no telemetry leaves your PC.</li>
+        <li><strong>Nothing is uploaded on its own.</strong> No account, no analytics, no telemetry leaves your PC.</li>
         <li>Your settings, stats and run recordings stay in <code>%APPDATA%\ValTrainer</code>. Delete that folder to reset everything.</li>
-        <li>The <strong>only</strong> network traffic is the update check to <code>api.github.com</code> (at startup
+        <li><strong>Bug reports</strong> are sent only when you press <i>Send</i> in the Report a bug form, and only what
+          its “What gets sent” preview shows: your text, version, PC and graphics info, bug-relevant settings and the end of
+          the log, with your Windows user name, PC name and folders removed. They go through a small relay
+          (<a href="https://github.com/idoraz1/ValTrainer/tree/main/tools/bug-relay">source on GitHub</a>) to the public
+          #bug-reports channel on the ValTrainer Discord.</li>
+        <li>Apart from that, the <strong>only</strong> network traffic is the update check to <code>api.github.com</code> (at startup
           and every 6 hours) and downloading a newer release's files from GitHub. From version 1.4.1 it's
           <strong>opt-in</strong>: the first start asks, and until you choose <i>Enable updates</i> ValTrainer never goes
           online. <i>Check now</i> in Settings → About checks once, only when you click it.</li>
@@ -733,7 +738,8 @@
           <p>Use the Start menu shortcut <strong>“ValTrainer (safe graphics)”</strong>, or run
             <code>ValTrainer.exe --rendering-method gl_compatibility</code>. In that mode the first start can freeze for up
             to about 30 s while shaders compile; later starts are fast. Still stuck?
-            <a href="https://github.com/idoraz1/ValTrainer/issues/new/choose">Open a bug report</a> (Settings → About can copy your system info).</p>
+            Press <strong>REPORT A BUG</strong> on the menu (from version 1.9.0) to send us your system info and log, or
+            <a href="https://github.com/idoraz1/ValTrainer/issues/new/choose">open a bug report on GitHub</a>.</p>
         </div>
       </details>
       <details>
