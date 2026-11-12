@@ -509,3 +509,12 @@ td.num { font-variant-numeric: tabular-nums; }
 .winget { margin-top: 1rem; }
 .winget p { max-width: 70ch; }
 .winget .copy-btn { margin-bottom: 0.9rem; }
+/* SEO landing pages */
+.lp .kicker a { color: inherit; }
+.lp .policy-body > figure { margin: 0; }
+.lp .faq h2 { margin-bottom: 0.4rem; }
+.lp-table { margin-top: 0; max-width: none; }
+.lp-table th, .lp-table td { padding: 0.6rem 0.75rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.lp-table thead th { color: var(--text); }
+.lp-table tbody th { color: var(--dim); font-weight: 600; }
+.lp-cta .btn { margin: 0.25rem 0.5rem 0.25rem 0; }
