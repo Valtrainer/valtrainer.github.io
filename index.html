@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ValTrainer · Free VALORANT aim, movement and utility trainer for Windows</title>
-<meta name="description" content="ValTrainer is a free, open-source aim, movement and utility trainer for VALORANT players. It imports your sensitivity, crosshair and keybinds, coaches your aim, and has 30+ drills, all 29 agents and 6 true-scale maps. Windows 10/11.">
+<title>ValTrainer: Free Aim Trainer for VALORANT Players (Windows)</title>
+<meta name="description" content="Free, open-source aim trainer that imports your VALORANT sens, crosshair and keybinds. Aim coach, 30+ drills, 29 agents, spray control for 20 guns. Windows.">
 <link rel="canonical" href="https://valtrainer.github.io/">
 <meta name="theme-color" content="#0f1923">
 <meta name="color-scheme" content="dark">
@@ -12,16 +12,16 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ValTrainer">
-<meta property="og:title" content="ValTrainer · Free VALORANT aim, movement and utility trainer">
-<meta property="og:description" content="Plays with your own VALORANT settings. Aim coach, 30+ drills, all 29 agents, 6 true-scale maps, Deathmatch and a Lock-In routine for before ranked. Free and open source for Windows 10/11.">
+<meta property="og:title" content="ValTrainer: Free Aim Trainer for VALORANT Players (Windows)">
+<meta property="og:description" content="Train with your own VALORANT sens, crosshair and keybinds. Aim coach, 30+ drills, all 29 agents, Deathmatch, spray control for 20 guns, gun skins and a Lock-In warm-up. Free and open source for Windows 10/11.">
 <meta property="og:url" content="https://valtrainer.github.io/">
 <meta property="og:image" content="https://valtrainer.github.io/media/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="ValTrainer, a free VALORANT-style aim trainer">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ValTrainer · Free VALORANT aim, movement and utility trainer">
-<meta name="twitter:description" content="Plays with your own VALORANT settings. Aim coach, 30+ drills, all 29 agents, 6 true-scale maps. Free and open source for Windows.">
+<meta name="twitter:title" content="ValTrainer: Free Aim Trainer for VALORANT Players (Windows)">
+<meta name="twitter:description" content="Train with your own VALORANT sens, crosshair and keybinds. Aim coach, 30+ drills, all 29 agents, Deathmatch, spray control for 20 guns, gun skins and a Lock-In warm-up. Free and open source for Windows 10/11.">
 <meta name="twitter:image" content="https://valtrainer.github.io/media/og-image.jpg">
 
 <link rel="icon" href="favicon.ico" sizes="48x48">
@@ -51,19 +51,65 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "ValTrainer",
-  "description": "A free, open-source aim, movement and utility trainer for VALORANT players that imports your VALORANT settings.",
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "Windows 10, Windows 11",
-  "url": "https://valtrainer.github.io/",
-  "downloadUrl": "https://github.com/idoraz1/ValTrainer/releases/latest",
-  "softwareVersion": "1.7.0",
-  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
-  "isAccessibleForFree": true,
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "codeRepository": "https://github.com/idoraz1/ValTrainer",
-  "sameAs": ["https://github.com/idoraz1/ValTrainer", "https://idoraz1.itch.io/valtrainer", "https://discord.gg/Y6UKUX89C8"]
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://valtrainer.github.io/#website",
+      "url": "https://valtrainer.github.io/",
+      "name": "ValTrainer",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://valtrainer.github.io/#author",
+      "name": "idoraz1",
+      "url": "https://github.com/idoraz1"
+    },
+    {
+      "@type": ["SoftwareApplication", "VideoGame"],
+      "@id": "https://valtrainer.github.io/#app",
+      "name": "ValTrainer",
+      "description": "A free, open-source aim, movement and utility trainer for VALORANT players. It imports your VALORANT sensitivity, crosshair and keybinds, and has an aim coach, 30+ drills, all 29 agents' abilities, Deathmatch bots and spray control for 20 guns.",
+      "applicationCategory": "GameApplication",
+      "genre": "Aim trainer",
+      "gamePlatform": "PC",
+      "operatingSystem": "Windows 10, Windows 11",
+      "url": "https://valtrainer.github.io/",
+      "downloadUrl": "https://github.com/idoraz1/ValTrainer/releases/latest",
+      "installUrl": "https://valtrainer.github.io/#winget",
+      "softwareVersion": "1.19.0",
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-11-12",
+      "inLanguage": ["en", "fr", "es", "pt-BR", "de"],
+      "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://valtrainer.github.io/#author" },
+      "codeRepository": "https://github.com/idoraz1/ValTrainer",
+      "screenshot": [
+        "https://valtrainer.github.io/media/hero.jpg",
+        "https://valtrainer.github.io/media/shot-skins.jpg"
+      ],
+      "featureList": [
+        "Imports your VALORANT sensitivity, crosshair and keybinds",
+        "Aim coach with a rank estimate and what to fix first",
+        "30+ drills scaled from Iron to Radiant",
+        "Ability drills for all 29 agents",
+        "Deathmatch and true-scale map drills",
+        "Spray control for all 20 guns",
+        "Sens Finder (blind A/B test) and Crosshair Finder",
+        "Lock-In warm-up before ranked",
+        "Gun skins earned through progression",
+        "English, French, Spanish, Portuguese (Brazil) and German"
+      ],
+      "sameAs": [
+        "https://github.com/idoraz1/ValTrainer",
+        "https://idoraz1.itch.io/valtrainer",
+        "https://discord.gg/Y6UKUX89C8",
+        "https://github.com/microsoft/winget-pkgs/tree/master/manifests/v/Valtrainer/ValTrainer"
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -104,7 +150,7 @@
     <div class="hero-grid">
       <div class="hero-copy">
         <p class="kicker hero-eyebrow">Aim · Movement · Utility trainer</p>
-        <h1 id="hero-title"><span class="red">Val</span>Trainer</h1>
+        <h1 id="hero-title"><span class="red">Val</span>Trainer<span class="h1-sub">The free aim trainer for VALORANT players</span></h1>
         <p class="tagline">Train with your own VALORANT settings</p>
         <p class="lead">A free aim, movement and utility trainer for VALORANT players. It imports your sensitivity,
           crosshair and keybinds, so every drill feels like the game. Bots scale to your rank, and an aim coach tells
@@ -119,6 +165,8 @@
             Portable .zip <span class="sr-only">(</span><span class="dim small" data-size="portable">176 MB</span><span class="sr-only">)</span>
           </a>
         </div>
+        <p class="winget-line">Or in a terminal: <code id="winget-hero">winget install Valtrainer.ValTrainer</code>
+          <button class="copy-btn copy-inline" type="button" data-copy="winget-hero">Copy</button></p>
         <ul class="facts">
           <li>Windows 10 / 11</li>
           <li>Free</li>
@@ -148,8 +196,8 @@
       <li><b>30+</b><span>Drills</span></li>
       <li><b>29</b><span>Agents</span></li>
       <li><b>6</b><span>True-scale maps</span></li>
-      <li><b>5</b><span>Rank tiers</span></li>
-      <li><b>8</b><span>Coached skills</span></li>
+      <li><b>20</b><span>Guns</span></li>
+      <li><b>5</b><span>Languages</span></li>
       <li><b>0</b><span>Ads or accounts</span></li>
     </ul>
   </div>
@@ -160,7 +208,7 @@
   <div class="wrap">
     <header class="sec-head reveal">
       <p class="kicker">01 · Features</p>
-      <h2 id="features-title">Training that feels like the game</h2>
+      <h2 id="features-title">Aim training with your own VALORANT settings</h2>
       <p>Same sens, same crosshair, same keys, same movement rules. What you practise here carries straight over to your next match.</p>
     </header>
 
@@ -383,6 +431,36 @@
         <div class="feature-media">
           <figure class="shot shot-accent">
             <div class="frame">
+              <img src="media/shot-skins.webp" data-fallback="media/shot-skins.jpg hide" width="1600" height="900" loading="lazy" decoding="async"
+                alt="The Orrery Apex skin, gold and deep blue, on the Vandal in Gridshot.">
+            </div>
+            <figcaption>Orrery, one of the three Apex skin lines, on the Vandal.</figcaption>
+          </figure>
+        </div>
+        <div class="feature-text">
+          <span class="tag tag-valorant">New in 1.19</span>
+          <h3>Gun skins you earn by getting better</h3>
+          <p>15 original skin lines, made for ValTrainer, for every gun. Training earns XP and levels, and stars for real
+            improvement: new personal bests and badge rank-ups. Those unlock the skins.</p>
+          <ul class="ticks">
+            <li><b>Core</b> (5 lines): free finishes from the start.</li>
+            <li><b>Signature</b> (7 lines): their own gun, hit and kill sounds, muzzle flash, tracers, impacts, a kill
+              effect and an inspect flourish.</li>
+            <li><b>Apex</b> (Foundry, Aurora, Orrery): 5 levels and 3 colour variants, with an animated finish, a special
+              reload, a kill counter and a finisher on the round-winning kill, like in VALORANT. On the Vandal and Phantom
+              they're detailed 3D models of their own.</li>
+            <li><b>Progression:</b> three daily and three weekly challenges, a weekly streak with rest tokens, and credit
+              for the training you'd already done.</li>
+          </ul>
+          <p class="note">Skins are cosmetic: scores, bots and stats aren't affected. They aren't VALORANT skins: Riot's art,
+            sounds and effects can't be used. Inspect your gun with Y.</p>
+        </div>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-media">
+          <figure class="shot shot-accent">
+            <div class="frame">
               <img src="media/shot-sensfinder.webp" data-fallback="media/shot-sensfinder.jpg img/coach.webp" width="1600" height="900" loading="lazy" decoding="async"
                 alt="Sens Finder result: a recommended VALORANT sensitivity, eDPI and cm/360.">
             </div>
@@ -409,7 +487,7 @@
           <span class="tag tag-coach">Coach tools</span>
           <h3>Find your sens and your crosshair</h3>
           <ul class="ticks">
-            <li><b>Sens Finder</b> (about 13 minutes): you alternate between two unlabelled sensitivities with flicks and
+            <li><b>Sens Finder</b> (about 16 minutes, or about 8 with the short test): you alternate between two unlabelled sensitivities with flicks and
               strafe tracking, and it narrows down to the one you score best with. You get a VALORANT sens, eDPI and cm/360.</li>
             <li><b>Crosshair Finder</b> (about 6 minutes): ranks colours and outlines by contrast against the maps and
               your enemy highlight colour, times how fast you spot each one, then runs a bracket of shapes decided by your
@@ -554,6 +632,7 @@
         <ul>
           <li><b>Setup.exe</b> (recommended): installs for your Windows user, with Start menu shortcuts, an optional desktop icon and an uninstaller.</li>
           <li><b>Portable.zip</b>: no installation, unzip anywhere and run <code>ValTrainer.exe</code>.</li>
+          <li><b>winget</b>: ValTrainer is in Windows Package Manager. See below.</li>
         </ul>
         <a class="btn btn-primary btn-sm" data-dl="setup" href="https://github.com/idoraz1/ValTrainer/releases/latest">Get Setup.exe</a>
       </li>
@@ -575,6 +654,16 @@
         <p>To get coach ratings, play Head Flicks, Strafe Tracking, Peek Practice, Counter-Strafe and Vandal Spray a few times each.</p>
       </li>
     </ol>
+    <div class="winget panel reveal" id="winget">
+      <h3>Install with winget</h3>
+      <p>ValTrainer is in the official Windows Package Manager (winget) repository, which is built into Windows 10 and 11.
+        Open Terminal or PowerShell and run:</p>
+      <pre class="code"><code id="winget-cmd">winget install Valtrainer.ValTrainer</code></pre>
+      <button class="copy-btn" type="button" data-copy="winget-cmd">Copy command</button>
+      <p>winget downloads the same installer from the GitHub release and checks its SHA-256 hash for you. To update
+        later, run <code>winget upgrade Valtrainer.ValTrainer</code>, or let ValTrainer update itself. Each new version is
+        reviewed by Microsoft before it shows up in winget, so it can arrive there a day or two after the release.</p>
+    </div>
     <p class="alt-downloads reveal">Other downloads:
       <a data-dl="portable" href="https://github.com/idoraz1/ValTrainer/releases/latest">Portable.zip (<span data-size="portable">176 MB</span>)</a> ·
       <a data-dl="sums" href="https://github.com/idoraz1/ValTrainer/releases/latest">SHA256SUMS.txt</a> ·
@@ -601,6 +690,7 @@
       <ul class="ticks">
         <li><b>Installer version:</b> the new Setup runs silently and upgrades in place.</li>
         <li><b>Portable version:</b> the new <code>ValTrainer.exe</code> replaces the old one in its folder.</li>
+        <li><b>Installed with winget:</b> the built-in updater works the same, or run <code>winget upgrade Valtrainer.ValTrainer</code>.</li>
       </ul>
       <ul class="ticks">
         <li><b>Opt-in:</b> from version 1.4.1, the first start asks “Check GitHub for new versions?”. Nothing is requested until you choose <i>Enable updates</i>.</li>
@@ -713,6 +803,34 @@
             <a href="https://buymeacoffee.com/idoraz1">buy me a coffee</a> or support it on
             <a href="https://ko-fi.com/idoraz1">Ko-fi</a>. It's optional, and ValTrainer stays free either way. In the app,
             the reminder can be turned off in Settings → About.</p>
+          <p>Gun skins are earned by playing. As a thank-you, supporters can get a code that unlocks them all at once,
+            but nothing that affects training is ever locked.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Is it a free alternative to Aim Lab or KovaaK's?</summary>
+        <div class="answer">
+          <p>For VALORANT players, yes. Aim Lab and KovaaK's are great general aim trainers with huge scenario libraries
+            and support for many games. ValTrainer is narrower: it is built only for VALORANT. It uses your exact VALORANT
+            sens, crosshair and keybinds, VALORANT's movement and gun rules, all 29 agents' abilities and true-scale map
+            areas, and it's free and open source. Many players use both.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Can I install it with winget?</summary>
+        <div class="answer">
+          <p>Yes: <code>winget install Valtrainer.ValTrainer</code> in Terminal or PowerShell installs the latest version,
+            and <code>winget upgrade Valtrainer.ValTrainer</code> updates it. See <a href="#winget">Install with winget</a>.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Which languages does it support?</summary>
+        <div class="answer">
+          <p>English, French (Français), Spanish (Español), Portuguese (Português do Brasil) and German (Deutsch). By
+            default it follows your VALORANT language; change it at the top of Settings → General. The translations are
+            machine-made for now, and corrections are welcome on
+            <a href="https://github.com/idoraz1/ValTrainer/blob/main/CONTRIBUTING.md">GitHub</a> or the
+            <a href="https://discord.gg/Y6UKUX89C8">Discord</a>.</p>
         </div>
       </details>
       <details>
@@ -763,7 +881,71 @@
     </header>
     <ol class="timeline">
       <li class="release latest reveal">
-        <div class="ver">1.7.0<small>8 Oct 2026</small><span class="badge">Latest</span></div>
+        <div class="ver">1.19.0<small>12 Nov 2026</small><span class="badge">Latest</span></div>
+        <div>
+          <h3>Skins, progression and 5 languages</h3>
+          <ul>
+            <li>15 original gun skin lines (Core, Signature, Apex) with sounds, effects, inspect (Y) and finishers</li>
+            <li>Progression: XP, levels, stars for real improvement, daily and weekly challenges</li>
+            <li>English, French, Spanish, Portuguese (Brazil) and German</li>
+            <li>Crosshair switcher for every profile saved in VALORANT, a short Sens Finder test, and a more honest coach rank estimate</li>
+            <li>Your gun is reloaded when you respawn, and a double-click no longer counts as a miss</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.18.0<small>31 Oct 2026</small></div>
+        <div>
+          <h3>Every gun in VALORANT</h3>
+          <ul>
+            <li>All 20 guns with their own sprays, a buy menu in the drill preview and best scores per gun</li>
+            <li>Deathmatch spawns out of sight and bots that strafe and peek like players</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.17.0<small>24 Oct 2026</small></div>
+        <div>
+          <h3>Sheriff One-Taps, Strafe Duels and keybinds</h3>
+          <ul>
+            <li>Sheriff One-Taps and Strafe Duels drills</li>
+            <li>Change every keybind in Settings; Sens Finder micro-adjustments</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.16.0<small>18 Oct 2026</small></div>
+        <div>
+          <h3>Movement, flashes and free play</h3>
+          <ul>
+            <li>Movement, acceleration and jumps tuned to feel like VALORANT, with your own footsteps (1.16)</li>
+            <li>Flashes that look, sound and time like VALORANT's, and Free Play for any drill (1.15)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.14.0<small>16 Oct 2026</small></div>
+        <div>
+          <h3>Rewind, drill previews and Mixed Peeks</h3>
+          <ul>
+            <li>Rewind: replay any run in 3D, with the coach's problem moments one click away (1.11)</li>
+            <li>Live drill previews before you start (1.14); type an exact sensitivity (1.12)</li>
+            <li>Mixed Peeks drill and community-made drills (1.10)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.9.0<small>11 Oct 2026</small></div>
+        <div>
+          <h3>Discord and in-app bug reports</h3>
+          <ul>
+            <li>Report a bug or suggest a feature from inside ValTrainer (1.9, 1.13)</li>
+            <li>The ValTrainer Discord, one click from the menu (1.8)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="release reveal">
+        <div class="ver">1.7.0<small>8 Oct 2026</small></div>
         <div>
           <h3>Support ValTrainer</h3>
           <ul>

@@ -500,3 +500,12 @@ td.num { font-variant-numeric: tabular-nums; }
   .js .reveal { opacity: 1; transform: none; }
   .js .sec-head.reveal:not(.in) h2::after { transform: none; }
 }
+
+/* v1.19: H1 keyword line, winget install */
+.hero h1 .h1-sub { display: block; margin-top: 0.7rem; font-size: clamp(0.95rem, 2vw, 1.3rem); letter-spacing: 0.08em; line-height: 1.2; color: var(--dim); }
+.winget-line { margin: 0.9rem 0 0; color: var(--dim); font-size: 0.88rem; }
+.winget-line code { color: var(--text); }
+.copy-btn.copy-inline { margin: 0 0 0 0.5rem; padding: 0.25rem 0.5rem; vertical-align: middle; }
+.winget { margin-top: 1rem; }
+.winget p { max-width: 70ch; }
+.winget .copy-btn { margin-bottom: 0.9rem; }

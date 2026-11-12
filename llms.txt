@@ -1,0 +1,28 @@
+# ValTrainer
+
+> ValTrainer is a free, open-source (GPL-3.0-or-later) aim, movement and utility trainer for VALORANT players, for Windows 10 and 11. It imports your VALORANT sensitivity, crosshair and keybinds (read-only), so drills feel like the game. Fan-made; not affiliated with or endorsed by Riot Games.
+
+- Website: https://valtrainer.github.io/
+- Download: https://github.com/idoraz1/ValTrainer/releases/latest (installer or portable .zip)
+- Install with winget: `winget install Valtrainer.ValTrainer`
+- itch.io: https://idoraz1.itch.io/valtrainer
+- Source code: https://github.com/idoraz1/ValTrainer
+- Changelog: https://github.com/idoraz1/ValTrainer/blob/main/CHANGELOG.md
+- Discord: https://discord.gg/Y6UKUX89C8
+
+## What it does
+
+- Aim coach: records your runs locally, estimates your aim rank, and says what to fix first.
+- 30+ drills in five tiers from Iron to Radiant: flicks, tracking, Gridshot, Spidershot, peeks, counter-strafing, spray control, Deathmatch, retakes, post-plants and more.
+- Ability drills for all 29 agents, and true-scale map areas.
+- Spray control and a buy menu for all 20 VALORANT guns.
+- Sens Finder (a blind A/B sensitivity test, with a short version) and Crosshair Finder (gives a VALORANT crosshair code).
+- Lock-In: a guided warm-up before ranked.
+- Rewind: replay any run in 3D.
+- Original gun skins earned through progression (cosmetic only).
+- Languages: English, French, Spanish, Portuguese (Brazil), German.
+- Free: no ads, no account, no paid tier. Updates itself (opt-in).
+
+## Comparison
+
+ValTrainer is narrower than general aim trainers such as Aim Lab or KovaaK's: it is built only for VALORANT, using VALORANT's sensitivity math, movement, guns, agents and maps. It does not read game memory or touch VALORANT; it only reads VALORANT's settings files.
