@@ -14,7 +14,7 @@
 
 - Aim coach: records your runs locally, estimates your aim rank, and says what to fix first.
 - 30+ drills in five tiers from Iron to Radiant: flicks, tracking, Gridshot, Spidershot, peeks, counter-strafing, spray control, Deathmatch, retakes, post-plants and more.
-- Ability drills for all 29 agents, and true-scale map areas.
+- Ability drills for all 30 agents, and true-scale map areas.
 - Spray control and a buy menu for all 20 VALORANT guns.
 - Sens Finder (a blind A/B sensitivity test, with a short version) and Crosshair Finder (gives a VALORANT crosshair code).
 - Lock-In: a guided warm-up before ranked.
