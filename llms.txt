@@ -26,3 +26,11 @@
 ## Comparison
 
 ValTrainer is narrower than general aim trainers such as Aim Lab or KovaaK's: it is built only for VALORANT, using VALORANT's sensitivity math, movement, guns, agents and maps. It does not read game memory or touch VALORANT; it only reads VALORANT's settings files.
+
+## Guides
+
+- [Find your VALORANT sensitivity with a blind A/B test](https://valtrainer.github.io/valorant-sensitivity-finder.html)
+- [A free Aim Lab and KovaaK's alternative built for VALORANT](https://valtrainer.github.io/aim-lab-alternative.html)
+- [VALORANT crosshair codes: pick, import and test a crosshair](https://valtrainer.github.io/valorant-crosshair.html)
+- [VALORANT spray control: Vandal and Phantom recoil practice](https://valtrainer.github.io/valorant-spray-control.html)
+- [A VALORANT warm up routine before ranked](https://valtrainer.github.io/valorant-warm-up.html)
